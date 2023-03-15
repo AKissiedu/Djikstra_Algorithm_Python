@@ -1,5 +1,6 @@
 # This Python Program Is An Implementation of Dijkstra's Single Shortest Path Algorithm.
 # The program is for adjacency matrix representation of the graph
+# I acknowledge the efforts of Jitender Punia
 
 # Library for INT_MAX
 #import sys
@@ -67,19 +68,21 @@ class Graph():
         self.printSolution(dist)
  
 
+# This part of the code is where you specify the number of vertices of your graph 
+
 # The parameter is the number of vertices or nodes of the graph
 g = Graph(9)
 
 # Tranform your graph in a matrix form
 
 g.graph = [[0, 5, 0, 0, 0, 0, 0, 7, 0],
-			[5, 0, 6, 0, 0, 0, 0, 0, 12],
-			[0, 6, 0, 7, 0, 4, 0, 0, 3],
-			[0, 0, 7, 0, 10, 12, 0, 0, 0],
-			[0, 0, 0, 10, 0, 10, 0, 0, 0],
-			[0, 0, 4, 12, 10, 0, 1, 0, 0],
-			[0, 0, 0, 0, 0, 0, 1, 0, 2, 4],
-            [7, 12, 0, 0, 0, 0, 0, 2, 0, 7],
-            [0, 0, 3, 0, 0, 0, 4, 7, 0]]
+	  [5, 0, 6, 0, 0, 0, 0, 0, 12],
+	  [0, 6, 0, 7, 0, 4, 0, 0, 3],
+	  [0, 0, 7, 0, 10, 12, 0, 0, 0],
+	  [0, 0, 0, 10, 0, 10, 0, 0, 0],
+	  [0, 0, 4, 12, 10, 0, 1, 0, 0],
+	  [0, 0, 0, 0, 0, 0, 1, 0, 2, 4],
+          [7, 12, 0, 0, 0, 0, 0, 2, 0, 7],
+          [0, 0, 3, 0, 0, 0, 4, 7, 0]]
  
 g.dijkstra(0);
